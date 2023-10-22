@@ -12,8 +12,22 @@
         My Library
     </header>
     <main>
-        <div class="add">
-            <button>Add New Book</button>
+        <div>
+            <dialog>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                    <label for="author">Author:</label>
+                    <input type="text" name="author" id="author">
+                    <label for="pages">Pages:</label>
+                    <input type="number" name="pages" id="pages">
+                    <label for="read">Have you read it?</label>
+                    <input type="checkbox" name="read" id="read">
+                    <button type="button" class="cancel">Cancel</button>
+                    <button type="button" class="add-book">Add</button>
+                </form>
+            </dialog>
+            <button class="add">Add New Book</button>
         </div>
         <div class="books">
             
