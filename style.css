@@ -32,6 +32,7 @@ main {
     border-radius: 16px;
     height: 30vh;
     font-size: 20px;
+    display: grid;
 }
 
 input {
@@ -53,4 +54,8 @@ button {
     background-color: #06b6d4;
     color: #1e293b;
     font-weight: bold;
+}
+
+.book button {
+    font-size: 10px;
 }
