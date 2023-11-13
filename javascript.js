@@ -73,7 +73,9 @@ addBook.addEventListener("click", () => {
 
     formRead ? formRead = "Read" : formRead = "Not read";
 
-    addBookToLibrary(formName, formAuthor, formPages, formRead, formIndex);
-    displayBooks();
-    dialog.close();
+    if (formName != "" && formAuthor != "" && formPages != "") {
+        addBookToLibrary(formName, formAuthor, formPages, formRead, formIndex);
+        displayBooks();
+        dialog.close();
+    }
 });
